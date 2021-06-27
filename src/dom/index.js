@@ -43,9 +43,6 @@ const createPokemonCard = (pokemon) => {
 	textContainer.appendChild(cardName);
 	textContainer.appendChild(cardTypes);
 
-	// Add data types to card
-	card.setAttribute('data-types', pokemon.types.join(','));
-
 	// Add elements to card
 	card.classList.add('card');
 
@@ -62,6 +59,9 @@ const createPokemonList = (pokemonList, domEl) => {
 		const listElement = document.createElement('li');
 		const pokemonCard = createPokemonCard(pokemon);
 		
+		// Add data types to list element
+		listElement.setAttribute('data-types', pokemon.types.join(','));
+		listElement.classList.add('card-list__item');
 		listElement.appendChild(pokemonCard);
 		list.appendChild(listElement);
 	});

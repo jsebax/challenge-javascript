@@ -304,6 +304,10 @@ select {
 	margin-top: 20px;
 }
 
+.card-list__item.hide {
+	display: none;
+}
+
 .card {
 	background-color: #f2f2f1;
 	border-radius: 5px;
