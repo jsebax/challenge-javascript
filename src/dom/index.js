@@ -76,11 +76,10 @@ const createDropdownTypes = (pokemonList, domEl) => {
 	const sortedTypes = pokemonTypes.sort();
 
 	sortedTypes.forEach(type => {
-		const capitalizedType = type;
 		const optionEl = document.createElement('option');
 
 		optionEl.setAttribute('value', type);
-		optionEl.innerText = capitalizedType;
+		optionEl.innerText = type;
 
 		domEl.appendChild(optionEl);
 	});
