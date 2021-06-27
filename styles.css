@@ -50,7 +50,7 @@ select {
 }
 
 .container {
-	margin: 0 20px;
+	margin: 110px 20px 0;
 }
 
 .pill {
@@ -169,6 +169,13 @@ select {
 /* ///////////////////////////////////// */
 
 /* Header Styles */
+.header {
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
 .header__nav {
 	align-items: center;
 	background-color: #fb383a;
@@ -301,7 +308,6 @@ select {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 20px;
-	margin-top: 20px;
 }
 
 .card-list__item.hide {
