@@ -154,11 +154,11 @@ In order for us to review your solution, you need to create a Pull Request (PR) 
 
 ## Resources
 
-CSS Grid: https://css-tricks.com/snippets/css/complete-guide-grid/
-BEM: http://getbem.com/introduction/
-PokéAPI: https://pokeapi.co/
-DOM manipulation: https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction#core_interfaces_in_the_dom
-Add CSS class: https://www.w3schools.com/howto/howto_js_add_class.asp
-Remove CSS class: https://www.w3schools.com/howto/howto_js_remove_class.asp
-Toggle CSS class: https://www.w3schools.com/howto/howto_js_toggle_class.asp
-DOM Event listeners: https://www.w3schools.com/js/js_htmldom_eventlistener.asp
+- CSS Grid: https://css-tricks.com/snippets/css/complete-guide-grid/
+- BEM: http://getbem.com/introduction/
+- PokéAPI: https://pokeapi.co/
+- DOM manipulation: https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction#core_interfaces_in_the_dom
+- Add CSS class: https://www.w3schools.com/howto/howto_js_add_class.asp
+- Remove CSS class: https://www.w3schools.com/howto/howto_js_remove_class.asp
+- Toggle CSS class: https://www.w3schools.com/howto/howto_js_toggle_class.asp
+- DOM Event listeners: https://www.w3schools.com/js/js_htmldom_eventlistener.asp
