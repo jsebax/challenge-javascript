@@ -35,6 +35,7 @@ select {
   margin: 0;
 	outline: none;
   padding: 0 1em 0 0;
+	text-transform: capitalize;
   width: 100%;
 }
 
@@ -60,6 +61,7 @@ select {
 	line-height: 18px;
 	margin-right: 3px;
 	text-align: center;
+	text-transform: capitalize;
 	width: 80px;
 }
 
@@ -344,6 +346,7 @@ select {
 	color: #313131;
 	font-size: 23px;
 	margin-bottom: 5px;
+	text-transform: capitalize;
 }
 
 @media screen and (min-width: 720px) {
@@ -361,5 +364,3 @@ select {
 		grid-template-columns: repeat(6, 1fr);
 	}
 }
-
-/* Dark Theme Styles */
