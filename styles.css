@@ -4,7 +4,6 @@
 }
 
 body {
-	background-color: #cccccc;
 	font-family: "Roboto", sans-serif;
 	margin: 0;
 }
@@ -42,6 +41,14 @@ select {
 /* ///////////////////////////////////// */
 
 /* App Styles */
+.main-content {
+	background-color: #cccccc;
+}
+
+.main-content.dark {
+	background-color: #28292d;
+}
+
 .container {
 	margin: 0 20px;
 }
@@ -171,12 +178,20 @@ select {
 	padding: 20px;
 }
 
+.dark .header__nav {
+	background-color: #16161d;
+}
+
 .header__title {
 	flex: 1;
 	text-transform: uppercase;
 }
 
 .header__dropdown {
+	margin-right: 20px;
+}
+
+.header__checkbox {
 	margin-right: 20px;
 }
 
@@ -218,6 +233,67 @@ select {
   clip-path: polygon(100% 0%, 0 0%, 50% 100%);
 	grid-area: select;
 	justify-self: end;
+}
+
+/* Checkbox Styles */
+.checkbox {
+	align-items: center;
+	display: flex;
+	line-height: 0;
+}
+
+.checkbox__image {
+	width: 25px;
+}
+
+.checkbox__image:not(:last-child) {
+	margin-right: 10px;
+}
+
+.checkbox__switch {
+	display: inline-block;
+	height: 25px;
+	margin-right: 10px;
+	position: relative;
+	width: 60px;
+}
+
+.checkbox input {
+	display: none;
+}
+
+.checkbox__slider {
+	background-color: #fff;
+	bottom: 0;
+	cursor: pointer;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: .4s;
+}
+
+.checkbox__slider::before {
+	background-color: #313131;
+	bottom: 4px;
+	content: "";
+	height: 17px;
+	left: 4px;
+	position: absolute;
+	transition: .4s;
+	width: 17px;
+}
+
+.checkbox__slider--round {
+	border-radius: 25px;
+}
+
+.checkbox__slider--round::before {
+	border-radius: 50%;
+}
+
+.checkbox__input:checked + .checkbox__slider::before {
+	transform: translateX(35px);
 }
 
 /* Card Styles */
@@ -270,3 +346,5 @@ select {
 		grid-template-columns: repeat(6, 1fr);
 	}
 }
+
+/* Dark Theme Styles */

@@ -12,7 +12,7 @@
 	<!-- Load CSS File -->
 	<link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="main-content">
 	<header class="header">
 		<nav class="header__nav">
 			<h1 class="header__title">Pokedex</h1>
@@ -22,6 +22,18 @@
 					<select id="dropdown-types">
 						<option value="all">All</option>
 					</select>
+				</div>
+			</div>
+			<div class="header__checkbox checkbox">
+				<div class="checkbox__image">
+					<img src="./assets/light.png" alt="light theme">
+				</div>
+				<label class="checkbox__switch" for="header-checkbox">
+					<input type="checkbox" id="header-checkbox" class="checkbox__input">
+					<div class="checkbox__slider checkbox__slider--round"></div>
+				</label>
+				<div class="checkbox__image">
+					<img src="./assets/dark.png" alt="dark theme">
 				</div>
 			</div>
 			<div class="header__image">
