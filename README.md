@@ -138,6 +138,20 @@ const addListeners = () => {
 }
 ```
 
+### Pull Request
+
+In order for us to review your solution, you need to create a Pull Request (PR) with the following specifications.
+
+- Create your branch based off `develop` branch
+- The branch name must follow this convention: `feature/name-lastname-functionality-challenge-js`. Where you replace `name` and `lastname` with yours, and `functionality` with the functionality you developed (e.g `theme`, `filter`, or both). Example, `feature/jhon-doe-theme-challenge-js`
+- When creating a PR, you will see that there is a template you must follow in order to keep the convention defined in the repository. The title of the PR should be your branch name. Remember to add the teachers as reviewers.
+- Add your name and lastname in the Author section
+- Add a description explaining what you did in this branch
+- Add screenshots with the work you did
+- You can create a PR per functionality. It means, you can create a PR including the light/dark theme functionality, and then create another branch where you can develop the other functionality
+
+![PR Template](/screenshots/pr-template.png?raw=true)
+
 ## Resources
 
 CSS Grid: https://css-tricks.com/snippets/css/complete-guide-grid/
