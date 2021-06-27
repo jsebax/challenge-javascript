@@ -1,0 +1,272 @@
+/* Global Styles */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #cccccc;
+	font-family: "Roboto", sans-serif;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+select {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+	color: inherit;
+  cursor: inherit;
+  font-family: inherit;
+  font-size: inherit;
+	grid-area: select;
+  line-height: inherit;
+  margin: 0;
+	outline: none;
+  padding: 0 1em 0 0;
+  width: 100%;
+}
+
+/* ///////////////////////////////////// */
+
+/* App Styles */
+.container {
+	margin: 0 20px;
+}
+
+.pill {
+	border-radius: 3px;
+	display: inline-block;
+	font-size: 11px;
+	line-height: 18px;
+	margin-right: 3px;
+	text-align: center;
+	width: 80px;
+}
+
+/* Background Color for Types */
+.background-color-grass {
+	background: linear-gradient(180deg, #9bcc50 50%, #9bcc50 50%);
+	background-color: #9bcc50;
+	color: #212121;
+}
+
+.background-color-poison {
+	background: linear-gradient(180deg, #b97fc9 50%, #b97fc9 50%);
+	background-color: #b97fc9;
+	color: #ffffff;
+}
+
+.background-color-fire {
+	background: linear-gradient(180deg, #fd7d24 50%, #fd7d24 50%);
+	background-color: #fd7d24;
+	color: #ffffff;
+}
+
+.background-color-flying {
+	background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+	background-color: #3dc7ef;
+	color: #212121;
+}
+
+.background-color-water {
+	background: linear-gradient(180deg, #4592c4 50%, #4592c4 50%);
+	background-color: #4592c4;
+	color: #ffffff;
+}
+
+.background-color-bug {
+	background: linear-gradient(180deg, #729f3f 50%, #729f3f 50%);
+	background-color: #729f3f;
+	color: #ffffff;
+}
+
+.background-color-normal {
+	background: linear-gradient(180deg, #a4acaf 50%, #a4acaf 50%);
+	background-color: #a4acaf;
+	color: #212121;
+}
+
+.background-color-electric {
+	background: linear-gradient(180deg, #eed535 50%, #eed535 50%);
+	background-color: #eed535;
+	color: #212121;
+}
+
+.background-color-ground {
+	background: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
+	background-color: #f7de3f;
+	color: #212121;
+}
+
+.background-color-fairy {
+	background: linear-gradient(180deg, #fdb9e9 50%, #fdb9e9 50%);
+	background-color: #fdb9e9;
+	color: #212121;
+}
+
+.background-color-fighting {
+	background: linear-gradient(180deg, #d56723 50%, #d56723 50%);
+	background-color: #d56723;
+	color: #ffffff;
+}
+
+.background-color-psychic {
+	background: linear-gradient(180deg, #f366b9 50%, #f366b9 50%);
+	background-color: #f366b9;
+	color: #ffffff;
+}
+
+.background-color-rock {
+	background: linear-gradient(180deg, #a38c21 50%, #a38c21 50%);
+	background-color: #a38c21;
+	color: #ffffff;
+}
+
+.background-color-steel {
+	background: linear-gradient(180deg, #9eb7b8 50%, #9eb7b8 50%);
+	background-color: #9eb7b8;
+	color: #212121;
+}
+
+.background-color-ice {
+	background: linear-gradient(180deg, #51c4e7 50%, #51c4e7 50%);
+	background-color: #51c4e7;
+	color: #212121;
+}
+
+.background-color-ghost {
+	background: linear-gradient(180deg, #7b62a3 50%, #7b62a3 50%);
+	background-color: #7b62a3;
+	color: #ffffff;
+}
+
+.background-color-dragon {
+	background: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+	background-color: #53a4cf;
+	color: #ffffff;
+}
+
+/* ///////////////////////////////////// */
+
+/* Header Styles */
+.header__nav {
+	align-items: center;
+	background-color: #fb383a;
+	color: #ffffff;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+.header__title {
+	flex: 1;
+	text-transform: uppercase;
+}
+
+.header__dropdown {
+	margin-right: 20px;
+}
+
+.header__image {
+	line-height: 0;
+	width: 50px;
+}
+
+/* Dropdwon Styles */
+.dropdown {
+	align-items: center;
+	display: flex;
+}
+
+.dropdown__label {
+	font-size: 15px;
+	margin-right: 10px;
+	text-transform: uppercase;
+}
+
+.dropdown__select {
+	align-items: center;
+	background-color: #313131;
+	border-radius: 5px;
+	color: #ffffff;
+	cursor: pointer;
+	display: grid;
+	font-size: 15px;
+	grid-template-areas: "select";
+	padding: 10px;
+	width: 100%;
+}
+
+.dropdown__select::after {
+	content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+	grid-area: select;
+	justify-self: end;
+}
+
+/* Card Styles */
+.card-list {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 20px;
+	margin-top: 20px;
+}
+
+.card {
+	background-color: #f2f2f1;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	overflow: hidden;
+}
+
+.card__image {
+	padding: 10px;
+}
+
+.card__info {
+	background-color: #ffffff;
+	flex: 1;
+	padding: 10px;
+}
+
+.card__eyebrow {
+	color: #919191;
+	font-size: 13px;
+	margin-bottom: 7px;
+}
+
+.card__name {
+	color: #313131;
+	font-size: 23px;
+	margin-bottom: 5px;
+}
+
+@media screen and (min-width: 720px) {
+	.card-list {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.card-list {
+		grid-template-columns: repeat(6, 1fr);
+	}
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FooCamp Challenge JS</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+	<!-- Load CSS File -->
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header class="header">
+		<nav class="header__nav">
+			<h1 class="header__title">Pokedex</h1>
+			<div class="header__dropdown dropdown">
+				<label class="dropdown__label" for="dropdown-types">Type</label>
+				<div class="dropdown__select">
+					<select id="dropdown-types">
+						<option value="all">All</option>
+					</select>
+				</div>
+			</div>
+			<div class="header__image">
+				<img src="assets/pokeball.png" alt="Pokedex">
+			</div>
+		</nav>
+	</header>
+
+	<!-- Element where the cards are being loaded -->
+	<div class="container" id="app"></div>
+
+	<!-- Load JS Script -->
+	<script type="module" src="src/main.js"></script>
+</body>
+</html>
