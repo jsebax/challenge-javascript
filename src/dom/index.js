@@ -1,4 +1,4 @@
-import { capitalizeText, capitalizeWord, leadingZeros } from '../utils/index.js';
+import { leadingZeros } from '../utils/index.js';
 
 const createCardTypes = (types) => {
 	const cardTypes = document.createElement('div');
@@ -8,7 +8,7 @@ const createCardTypes = (types) => {
 
 		cardType.classList.add('pill');
 		cardType.classList.add(`background-color-${type}`);
-		cardType.innerText = capitalizeWord(type);
+		cardType.innerText = type;
 
 		cardTypes.appendChild(cardType);
 	});
@@ -36,7 +36,7 @@ const createPokemonCard = (pokemon) => {
 	cardId.innerText = `#${leadingZeros(pokemon.id)}`;
 
 	cardName.classList.add('card__name');
-	cardName.innerText = capitalizeText(pokemon.name);
+	cardName.innerText = pokemon.name.split('-').join(' ');
 
 	textContainer.classList.add('card__info');
 	textContainer.appendChild(cardId);
@@ -76,11 +76,10 @@ const createDropdownTypes = (pokemonList, domEl) => {
 	const sortedTypes = pokemonTypes.sort();
 
 	sortedTypes.forEach(type => {
-		const capitalizedType = capitalizeWord(type);
 		const optionEl = document.createElement('option');
 
 		optionEl.setAttribute('value', type);
-		optionEl.innerText = capitalizedType;
+		optionEl.innerText = type;
 
 		domEl.appendChild(optionEl);
 	});

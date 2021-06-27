@@ -1,7 +1,3 @@
-const capitalizeWord = (str) => `${str.charAt(0).toUpperCase()}${str.slice(1)}`;
-
-const capitalizeText = (text) => text.split('-').map(capitalizeWord).join(" ");
-
 const leadingZeros = (number) => {
 	let zeros = '';
 
@@ -15,7 +11,5 @@ const leadingZeros = (number) => {
 };
 
 export {
-	capitalizeText,
-	capitalizeWord,
 	leadingZeros
 };
